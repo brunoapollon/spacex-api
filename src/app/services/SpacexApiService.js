@@ -2,19 +2,19 @@ const httpClient = require('../config/httpClient');
 
 class SpacexApiSerive {
   upcomingLaunches() {
-    return httpClient.get('/launches/upcoming');
+    return httpClient.get('/upcoming');
   }
 
   pastLaunches() {
-    return httpClient.get('/launches/past');
+    return httpClient.get('/past');
   }
 
   latestLauncher() {
-    return httpClient.get('/launches/latest');
+    return httpClient.get('/latest');
   }
 
   nextLauncher() {
-    return httpClient.get('/launches/next');
+    return httpClient.get('/next');
   }
 }
 
