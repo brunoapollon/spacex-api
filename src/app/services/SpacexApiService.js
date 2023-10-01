@@ -12,6 +12,10 @@ class SpacexApiSerive {
   latestLauncher() {
     return httpClient.get('/launches/latest');
   }
+
+  nextLauncher() {
+    return httpClient.get('/launches/next');
+  }
 }
 
 module.exports = new SpacexApiSerive();

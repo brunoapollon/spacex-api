@@ -18,6 +18,12 @@ class LauncherController {
 
     return response.status(200).json(latestLauncher);
   }
+
+  async next(request, response) {
+    const { data: nextLauncher } = await SpacexApiService.nextLauncher();
+
+    return response.status(200).json(nextLauncher);
+  }
 }
 
 module.exports = new LauncherController();
