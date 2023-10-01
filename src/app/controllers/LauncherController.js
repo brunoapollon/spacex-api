@@ -2,9 +2,9 @@ const SpacexApiService = require('../services/SpacexApiService');
 
 class LauncherController {
   async upcoming(request, response) {
-    const { data: launchesUpcoming } = await SpacexApiService.upcomingLaunches();
+    const { data: upcomingLaunches } = await SpacexApiService.upcomingLaunches();
 
-    return response.status(200).json(launchesUpcoming);
+    return response.status(200).json(upcomingLaunches);
   }
 
   async past(request, response) {
