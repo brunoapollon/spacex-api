@@ -6,6 +6,12 @@ class LauncherController {
 
     return response.status(200).json(launchesUpcoming);
   }
+
+  async past(request, response) {
+    const { data: pastLaunches } = await SpacexApiService.pastLaunches();
+
+    return response.status(200).json(pastLaunches);
+  }
 }
 
 module.exports = new LauncherController();
