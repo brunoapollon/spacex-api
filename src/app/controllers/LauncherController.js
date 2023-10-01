@@ -12,6 +12,12 @@ class LauncherController {
 
     return response.status(200).json(pastLaunches);
   }
+
+  async latest(request, response) {
+    const { data: latestLauncher } = await SpacexApiService.latestLauncher();
+
+    return response.status(200).json(latestLauncher);
+  }
 }
 
 module.exports = new LauncherController();
