@@ -10,7 +10,7 @@ Nesse projeto não foi necessário o uso de muitas libs pelo tamanho do projeto.
   Foi mantido uma estrutura simples devido o tamanho do projeto, apenas a implementaçãod e um service, um controller e as rotas.
 
 ## Rodar o projeto
-  Para rodar o projeto basta instalar as dependênncias usando o yarn ou npm, criar um arquivo .env e copiar exatamente o que tem no .env.example
+  Para rodar o projeto basta instalar as dependênncias usando o yarn ou npm, criar um arquivo .env e copiar exatamente o que tem no .env.example, após isso basta rodar o script `start`.
 
 ### Rotas
   - /upcoming -> Retorna um array de objetos com as informações do lançamentos
